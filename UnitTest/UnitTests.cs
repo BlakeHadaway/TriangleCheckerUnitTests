@@ -150,7 +150,7 @@ namespace UnitTest
         }
 
         [Test]
-        public void Triangle_Input_9_15_18_VerifyScalene()
+        public void Triangle_Input_29_47_58_VerifyScalene()
         {
             //Arrange
             int side1 = 29;
@@ -158,6 +158,57 @@ namespace UnitTest
             int side3 = 58;
 
             string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void Triangle_Input_7_4_02_VerifyInvalid()
+        {
+            //Arrange
+            int side1 = 7;
+            int side2 = 4;
+            int side3 = 02;
+
+            string expected = "Based on the values entered, the triangle is INVALID";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void Triangle_Input_29_Negative47_58_VerifyInvalid()
+        {
+            //Arrange
+            int side1 = 29;
+            int side2 = -47;
+            int side3 = 58;
+
+            string expected = "Based on the values entered, the triangle is INVALID";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void Triangle_Input_29_10_99_VerifyInvalid()
+        {
+            //Arrange
+            int side1 = 29;
+            int side2 = 10;
+            int side3 = 99;
+
+            string expected = "Based on the values entered, the triangle is INVALID";
 
             //Act
             string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
