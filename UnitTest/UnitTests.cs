@@ -216,5 +216,56 @@ namespace UnitTest
             //Assert
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void Triangle_Input_10_10_0_VerifyZeroAsInput()
+        {
+            //Arrange
+            int side1 = 10;
+            int side2 = 10;
+            int side3 = 0;
+
+            string expected = "At least one side of your triangle has a zero length and is thus invalid";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void Triangle_Input_10_0_10_VerifyZeroAsInput()
+        {
+            //Arrange
+            int side1 = 10;
+            int side2 = 0;
+            int side3 = 10;
+
+            string expected = "At least one side of your triangle has a zero length and is thus invalid";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void Triangle_Input_0_10_10_VerifyZeroAsInput()
+        {
+            //Arrange
+            int side1 = 0;
+            int side2 = 10;
+            int side3 = 10;
+
+            string expected = "At least one side of your triangle has a zero length and is thus invalid";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
