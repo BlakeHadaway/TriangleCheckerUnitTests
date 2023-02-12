@@ -8,7 +8,7 @@ namespace TriangleSolver
 {
     public class Triangle
     {
-        public static string AnalyzeTriangle(int firstSide, int secondSide, int thirdSide)
+        public string AnalyzeTriangle(int firstSide, int secondSide, int thirdSide)
         {
             string output;
             if ((firstSide == 0) || (secondSide == 0) || (thirdSide == 0))

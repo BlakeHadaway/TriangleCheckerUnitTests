@@ -12,6 +12,8 @@ namespace UnitTest
     [TestFixture]
     public class UnitTests
     {
+        Triangle triangle = new Triangle();
+
         [Test]
         public void Triangle_Equilateral_Valid()
         {
@@ -23,7 +25,7 @@ namespace UnitTest
             string expected = "Based on all sides being equal, the type of triangle is an EQUILATERAL";
 
             // Act
-            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+            string actual = triangle.AnalyzeTriangle(side1, side2, side3);
 
             // Assert
             Assert.AreEqual(expected, actual);
@@ -41,7 +43,8 @@ namespace UnitTest
             string expected = "Based on two sides being equal, the type of triangle is an ISOSCELES";
 
             //Act
-            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+            
+            string actual = triangle.AnalyzeTriangle(side1, side2, side3);
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -58,7 +61,7 @@ namespace UnitTest
             string expected = "Based on two sides being equal, the type of triangle is an ISOSCELES";
 
             //Act
-            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+            string actual = triangle.AnalyzeTriangle(side1, side2, side3);
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -75,7 +78,7 @@ namespace UnitTest
             string expected = "Based on two sides being equal, the type of triangle is an ISOSCELES";
 
             //Act
-            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+            string actual = triangle.AnalyzeTriangle(side1, side2, side3);
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -92,7 +95,7 @@ namespace UnitTest
             string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
 
             //Act
-            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+            string actual = triangle.AnalyzeTriangle(side1, side2, side3);
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -109,7 +112,7 @@ namespace UnitTest
             string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
 
             //Act
-            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+            string actual = triangle.AnalyzeTriangle(side1, side2, side3);
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -126,7 +129,7 @@ namespace UnitTest
             string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
 
             //Act
-            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+            string actual = triangle.AnalyzeTriangle(side1, side2, side3);
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -143,7 +146,7 @@ namespace UnitTest
             string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
 
             //Act
-            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+            string actual = triangle.AnalyzeTriangle(side1, side2, side3);
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -160,7 +163,7 @@ namespace UnitTest
             string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
 
             //Act
-            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+            string actual = triangle.AnalyzeTriangle(side1, side2, side3);
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -177,7 +180,7 @@ namespace UnitTest
             string expected = "Based on the values entered, the triangle is INVALID";
 
             //Act
-            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+            string actual = triangle.AnalyzeTriangle(side1, side2, side3);
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -194,7 +197,7 @@ namespace UnitTest
             string expected = "Based on the values entered, the triangle is INVALID";
 
             //Act
-            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+            string actual = triangle.AnalyzeTriangle(side1, side2, side3);
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -211,7 +214,7 @@ namespace UnitTest
             string expected = "Based on the values entered, the triangle is INVALID";
 
             //Act
-            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+            string actual = triangle.AnalyzeTriangle(side1, side2, side3);
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -228,7 +231,7 @@ namespace UnitTest
             string expected = "At least one side of your triangle has a zero length and is thus invalid";
 
             //Act
-            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+            string actual = triangle.AnalyzeTriangle(side1, side2, side3);
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -245,7 +248,7 @@ namespace UnitTest
             string expected = "At least one side of your triangle has a zero length and is thus invalid";
 
             //Act
-            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+            string actual = triangle.AnalyzeTriangle(side1, side2, side3);
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -262,7 +265,7 @@ namespace UnitTest
             string expected = "At least one side of your triangle has a zero length and is thus invalid";
 
             //Act
-            string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+            string actual = triangle.AnalyzeTriangle(side1, side2, side3);
 
             //Assert
             Assert.AreEqual(expected, actual);
